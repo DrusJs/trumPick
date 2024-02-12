@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Regular;
+    src: url(../fonts/regular.ttf);
+}
+
+:root {
+    --color-white: #FFFFFF;
+    --font-inter: 'Inter', sans-serif;
+    --font-pjs: 'Plus Jakarta Sans', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
