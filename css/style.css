@@ -71,6 +71,9 @@ body.dark-theme .c-text {
     padding: 0 50px 100px;
     margin: 0 auto;
 }
+.header .container {
+    padding-bottom: 30px;
+}
 .main-section .container {
     max-width: 900px;
 }
