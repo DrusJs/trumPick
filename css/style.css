@@ -245,9 +245,11 @@ body.dark-theme .accordion {
 }
 
 
-
-
-
+@media (max-width: 989px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
 
 @media (max-width: 700px) {
     h1.title {
@@ -262,4 +264,5 @@ body.dark-theme .accordion {
     p.text {
         font-size: 12px;
     }
+
 }
