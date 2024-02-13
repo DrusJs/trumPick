@@ -8,6 +8,12 @@ document.getElementById('theme-button').addEventListener('click', ()=>{
 })
 document.body.classList.add('transition')
 
+document.querySelectorAll('.accordion-head').forEach(el=>{
+    el.addEventListener('click', ()=>{
+        el.parentElement.classList.toggle('active')
+    })
+})
+
 
 var animationContainer = document.getElementById('lottie-container');
 var animationData = {
