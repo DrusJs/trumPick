@@ -72,7 +72,10 @@ body.dark-theme .c-text {
     margin: 0 auto;
 }
 .main-section .container {
-    max-width: 800px;
+    max-width: 900px;
+}
+.lottie {
+    margin-bottom: 30px;
 }
 
 .header-inner {
@@ -111,6 +114,7 @@ body.dark-theme .c-text {
     display: flex;
     align-items: center;
     gap: 55px;
+    margin-top: 30px;
 }
 button.gradient-button {
     font-size: 30px;
