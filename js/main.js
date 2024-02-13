@@ -13,18 +13,3 @@ document.querySelectorAll('.accordion-head').forEach(el=>{
         el.parentElement.classList.toggle('active')
     })
 })
-
-
-var animationContainer = document.getElementById('lottie-container');
-var animationData = {
-    container: animationContainer,
-    renderer: 'canvas', 
-    loop: true,
-    autoplay: true,
-    path: 'lottie/In_store.json'
-}
-
-var anim = lottie.loadAnimation(animationData);
-
-
-
