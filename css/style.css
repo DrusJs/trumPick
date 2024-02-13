@@ -264,5 +264,14 @@ body.dark-theme .accordion {
     p.text {
         font-size: 12px;
     }
-
+    .rounded-item {
+        min-height: auto;
+        padding: 16px 30px;
+    }
+    .rounded-item h3.title {
+        margin-bottom: 0;
+    }
+    .rounded-item .text {
+        margin-top: 12px;
+    }
 }
