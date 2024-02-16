@@ -9,7 +9,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Plus+Jakarta+Sans:wght@500&family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        
         <link rel="stylesheet" href="css/style.css">
 
         <title>trumPick</title>
@@ -70,7 +71,7 @@
                             <path d="M25.7937 29.1501C25.7125 30.1845 24.9858 30.9807 24.1706 30.9282C23.3552 30.8759 22.7601 29.9948 22.8414 28.9602C22.9227 27.9257 23.6495 27.1295 24.4647 27.1819C25.2799 27.2344 25.875 28.1156 25.7937 29.1501Z" fill="black"/>
                         </svg>
                         <div class="header-action">
-                            <button class="copy-link">
+                            <button class="copy-link" data-tooltip="The link to <span class='c-green'>Trum</span>Pick website has been copied <i class='close'></i>">
                                 <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M21.2288 1.77814C18.8575 -0.592712 14.9994 -0.592712 12.6293 1.77814L9.71686 4.68913C9.28171 5.12414 9.28171 5.82884 9.71686 6.26385C10.152 6.69887 10.857 6.69887 11.292 6.26385L14.2044 3.35286C17.9171 -0.133719 23.1491 5.09529 19.6537 8.80083L16.2503 12.204C14.5272 13.9738 11.451 13.5897 10.218 11.4529C9.90393 10.9229 9.22006 10.7497 8.69137 11.0629C7.5269 11.7971 8.51892 13.1004 9.22519 13.7787C10.4109 14.9643 11.968 15.5566 13.5249 15.5566C15.0828 15.5566 16.6397 14.9643 17.8255 13.7789L21.2288 10.3762C23.5893 8.11234 23.5903 4.04148 21.2288 1.77814Z" fill="#4F4E4F"/>
                                     <path d="M11.7102 16.7437L8.79774 19.6547C5.11275 23.1519 -0.149851 17.8932 3.34858 14.2067C3.34845 14.2069 6.7519 10.8035 6.7519 10.8035C8.4726 9.03752 11.5438 9.41378 12.7785 11.5481C13.0918 12.0782 13.7763 12.2528 14.3043 11.9382C15.467 11.2084 14.4794 9.90176 13.777 9.22881C11.4056 6.85797 7.54816 6.85928 5.17678 9.22881L1.77333 12.632C-2.05815 16.4092 0.751666 23.0695 6.07329 23.0072C7.63023 23.0073 9.18796 22.4148 10.3729 21.2294L13.2854 18.3184C14.3022 17.2646 12.7635 15.7266 11.7102 16.7437Z" fill="#4F4E4F"/>
@@ -83,7 +84,7 @@
                                     <div class="select-dropdown__item">English</div>
                                 </div>
                             </div>
-                            <button class="theme-button" id="theme-button">
+                            <button class="theme-button">
                                 <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12.9074 0.0517156C12.2234 0.623278 11.4603 0.987512 10.7869 1.45764C10.0291 1.98772 9.4397 2.63767 8.93977 3.34757C8.28737 4.27408 7.99784 5.33435 7.71368 6.37604C7.39801 7.53773 7.23494 8.72693 7.31379 9.92541C7.36649 10.6861 7.42429 11.4651 7.73473 12.175C8.0716 12.9355 8.62932 13.6085 9.13971 14.2954C10.0291 15.4939 11.3236 16.2038 12.7391 16.803C14.0178 17.3469 15.3544 17.7064 16.7383 17.96C18.2748 18.2412 19.8061 18.1904 21.3322 17.9185C21.7216 17.8494 22.1057 17.7664 22.4899 17.688C22.6846 17.6512 22.8635 17.7019 22.9582 17.8539C23.0318 17.9738 23.0109 18.1029 22.874 18.2182C21.8899 19.0663 20.9744 19.9791 19.8641 20.7027C18.0697 21.8782 16.0964 22.6895 13.8389 22.9153C12.455 23.0536 11.0867 23.0213 9.71863 22.8277C9.15031 22.7493 8.65038 22.4682 8.10834 22.2976C6.49296 21.7813 5.18788 20.8687 3.89863 19.9052C2.15692 18.6053 1.09926 16.9505 0.451957 15.0605C0.00995936 13.7699 -0.0321485 12.4423 0.0151893 11.1101C0.099405 8.74538 1.11495 6.6573 2.61997 4.7535C3.87758 3.15858 5.51415 1.8817 7.52433 1.029C8.86615 0.466607 10.2922 0.116241 11.8024 0.0471318C12.155 0.0332629 12.5023 -0.054299 12.9074 0.0517156Z" fill="black"/>
                                 </svg>
@@ -102,7 +103,7 @@
                             var animationContainer = document.getElementById('lottie-container');
                             var animationData = {
                                 container: animationContainer,
-                                renderer: 'canvas', 
+                                renderer: 'svg', 
                                 loop: true,
                                 autoplay: true,
                                 path: 'lottie/In_store.json'
@@ -116,7 +117,7 @@
                         <div class="section-action">
                             <img src="images/qr-code.svg" alt="">
                             <button class="gradient-button">Use TrumPick <span>Beta</span></button>
-                            <button class="copy-link">
+                            <button class="copy-link" data-tooltip="The link to <span class='c-green'>Trum</span>Pick website has been copied <i class='close'></i>">
                                 <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M21.2288 1.77814C18.8575 -0.592712 14.9994 -0.592712 12.6293 1.77814L9.71686 4.68913C9.28171 5.12414 9.28171 5.82884 9.71686 6.26385C10.152 6.69887 10.857 6.69887 11.292 6.26385L14.2044 3.35286C17.9171 -0.133719 23.1491 5.09529 19.6537 8.80083L16.2503 12.204C14.5272 13.9738 11.451 13.5897 10.218 11.4529C9.90393 10.9229 9.22006 10.7497 8.69137 11.0629C7.5269 11.7971 8.51892 13.1004 9.22519 13.7787C10.4109 14.9643 11.968 15.5566 13.5249 15.5566C15.0828 15.5566 16.6397 14.9643 17.8255 13.7789L21.2288 10.3762C23.5893 8.11234 23.5903 4.04148 21.2288 1.77814Z" fill="#4F4E4F"/>
                                     <path d="M11.7102 16.7437L8.79774 19.6547C5.11275 23.1519 -0.149851 17.8932 3.34858 14.2067C3.34845 14.2069 6.7519 10.8035 6.7519 10.8035C8.4726 9.03752 11.5438 9.41378 12.7785 11.5481C13.0918 12.0782 13.7763 12.2528 14.3043 11.9382C15.467 11.2084 14.4794 9.90176 13.777 9.22881C11.4056 6.85797 7.54816 6.85928 5.17678 9.22881L1.77333 12.632C-2.05815 16.4092 0.751666 23.0695 6.07329 23.0072C7.63023 23.0073 9.18796 22.4148 10.3729 21.2294L13.2854 18.3184C14.3022 17.2646 12.7635 15.7266 11.7102 16.7437Z" fill="#4F4E4F"/>
@@ -246,7 +247,19 @@
                         <h2 class="title"><span class="c-green">Trum</span>Pick is particularly important</h2>
                         <h3 class="title">Who love the Earth</h3> 
                         <div class="flex-container flex-space">
-                            <img src="images/importants.png" alt="">
+                            <div class="lottie" id="planet"></div>
+                            <script>
+                                animationContainer = document.getElementById('planet');
+                                animationData = {
+                                    container: animationContainer,
+                                    renderer: 'svg', 
+                                    loop: true,
+                                    autoplay: true,
+                                    path: 'lottie/Planet.json'
+                                }
+    
+                                anim = lottie.loadAnimation(animationData);
+                            </script>
                             <div class="inner">
                                 <h3 class="title c-text">18% of Global warming is responsible for product groups harmful to Healthspan & Youthspan</h3>
                                 <p class="text c-text">Equivalent to stopping all cars, trains, ships and planes combined</p>
@@ -254,7 +267,19 @@
                         </div>
                         <h3 class="title">Who love the animals</h3> 
                         <div class="flex-container flex-space">
-                            <img src="images/importants2.png" alt="">
+                            <div class="lottie" id="animal"></div>
+                            <script>
+                                animationContainer = document.getElementById('animal');
+                                animationData = {
+                                    container: animationContainer,
+                                    renderer: 'svg', 
+                                    loop: true,
+                                    autoplay: true,
+                                    path: 'lottie/Animal.json'
+                                }
+    
+                                anim = lottie.loadAnimation(animationData);
+                            </script>
                             <div class="inner">
                                 <h3 class="title c-text">For strict vegans. For vegans.<br>
                                     For lacto-ovo-vegeterians.<br>
@@ -265,7 +290,19 @@
                         </div>
                         <h3 class="title">Who has health trouble or allergy</h3> 
                         <div class="flex-container flex-space">
-                            <img src="images/importants3.png" alt="">
+                            <div class="lottie" id="diseases"></div>
+                            <script>
+                                animationContainer = document.getElementById('diseases');
+                                animationData = {
+                                    container: animationContainer,
+                                    renderer: 'svg', 
+                                    loop: true,
+                                    autoplay: true,
+                                    path: 'lottie/Diseases_EN.json'
+                                }
+    
+                                anim = lottie.loadAnimation(animationData);
+                            </script>
                             <div class="inner">
                                 <h3 class="title c-text">Nutrition to accelerate disease remission, improve test results, and subjective well-being</h3>
                                 <p class="text c-text">And also about the connection of products with skin condition, allergies, sensitivity, histamine, etc.</p>
@@ -273,7 +310,19 @@
                         </div>
                         <h3 class="title">For pregnant or weaning</h3> 
                         <div class="flex-container flex-space">
-                            <img src="images/importants4.png" alt="">
+                            <div class="lottie" id="children"></div>
+                            <script>
+                                animationContainer = document.getElementById('children');
+                                animationData = {
+                                    container: animationContainer,
+                                    renderer: 'svg', 
+                                    loop: true,
+                                    autoplay: true,
+                                    path: 'lottie/Children.json'
+                                }
+    
+                                anim = lottie.loadAnimation(animationData);
+                            </script>
                             <div class="inner">
                                 <h3 class="title c-text">Conceiving a healthy offspring.<br> 
                                     Overcoming difficult pregnancies.<br>
@@ -284,7 +333,19 @@
                         </div>
                         <h3 class="title">Who cares about unfair marketing</h3> 
                         <div class="flex-container flex-space">
-                            <img src="images/importants5.png" alt="">
+                            <div class="lottie" id="marketing"></div>
+                            <script>
+                                animationContainer = document.getElementById('marketing');
+                                animationData = {
+                                    container: animationContainer,
+                                    renderer: 'svg', 
+                                    loop: true,
+                                    autoplay: true,
+                                    path: 'lottie/Marketing.json'
+                                }
+    
+                                anim = lottie.loadAnimation(animationData);
+                            </script>
                             <div class="inner">
                                 <h3 class="title c-text">Claimed health benefits of foods or advertised dietary systems genuinely beneficial?</h3>
                                 <p class="text c-text">If you want to truly understand the truth about nutrition and are interested in tangible results</p>
@@ -305,10 +366,10 @@
                             <img src="images/tablet.png" alt="">
                             <img src="images/phone.png" alt="">
                         </div>
-                        <div class="section-action">
+                        <div class="section-action"> 
                             <img src="images/qr-code.svg" alt="">
                             <button class="gradient-button">Use TrumPick <span class="c-green">Beta</span></button>
-                            <button class="copy-link">
+                            <button class="copy-link" data-tooltip="The link to <span class='c-green'>Trum</span>Pick website has been copied <i class='close'></i>">
                                 <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M21.2288 1.77814C18.8575 -0.592712 14.9994 -0.592712 12.6293 1.77814L9.71686 4.68913C9.28171 5.12414 9.28171 5.82884 9.71686 6.26385C10.152 6.69887 10.857 6.69887 11.292 6.26385L14.2044 3.35286C17.9171 -0.133719 23.1491 5.09529 19.6537 8.80083L16.2503 12.204C14.5272 13.9738 11.451 13.5897 10.218 11.4529C9.90393 10.9229 9.22006 10.7497 8.69137 11.0629C7.5269 11.7971 8.51892 13.1004 9.22519 13.7787C10.4109 14.9643 11.968 15.5566 13.5249 15.5566C15.0828 15.5566 16.6397 14.9643 17.8255 13.7789L21.2288 10.3762C23.5893 8.11234 23.5903 4.04148 21.2288 1.77814Z" fill="#4F4E4F"/>
                                     <path d="M11.7102 16.7437L8.79774 19.6547C5.11275 23.1519 -0.149851 17.8932 3.34858 14.2067C3.34845 14.2069 6.7519 10.8035 6.7519 10.8035C8.4726 9.03752 11.5438 9.41378 12.7785 11.5481C13.0918 12.0782 13.7763 12.2528 14.3043 11.9382C15.467 11.2084 14.4794 9.90176 13.777 9.22881C11.4056 6.85797 7.54816 6.85928 5.17678 9.22881L1.77333 12.632C-2.05815 16.4092 0.751666 23.0695 6.07329 23.0072C7.63023 23.0073 9.18796 22.4148 10.3729 21.2294L13.2854 18.3184C14.3022 17.2646 12.7635 15.7266 11.7102 16.7437Z" fill="#4F4E4F"/>
@@ -322,7 +383,19 @@
                 </section>
                 <section class="data-section">
                     <div class="container">
-                        <img src="images/data.png" alt="">
+                        <div class="lottie" id="evidence"></div>
+                        <script>
+                            animationContainer = document.getElementById('evidence');
+                            animationData = {
+                                container: animationContainer,
+                                renderer: 'svg', 
+                                loop: true,
+                                autoplay: true,
+                                path: 'lottie/Evidence_EN.json'
+                            }
+
+                            anim = lottie.loadAnimation(animationData);
+                        </script>
                         <h2 class="title center"><span class="c-green">Trum</span>Pick data: the most reliable of available</h2>
                         <h3 class="title">Nutrition of <b>long-livers. Scientific</b> papers.
                             Info from <b>doctors.</b> Examination of <b>statistics.</b>
@@ -333,11 +406,140 @@
                 <section class="advantages-section">
                     <div class="container">
                         <h2 class="title center">Why <span class="c-green">Trum</span>Pick</h2>
-                        <div class="swiper" id="swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"></div>
+                    </div>
+                    <div class="swiper" id="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <h2 class="title">100% independence</h2>
+                                <div class="lottie" id="Independant"></div>
+                                <script>
+                                    animationContainer = document.getElementById('Independant');
+                                    animationData = {
+                                        container: animationContainer,
+                                        renderer: 'svg', 
+                                        loop: true,
+                                        autoplay: true,
+                                        path: 'lottie/Independant.json'
+                                    }
+        
+                                    anim = lottie.loadAnimation(animationData);
+                                </script>
+                                <h3 class="title">No ads. Not affiliated with food brands or government agencies</h3>
+                                <p class="text">Development of <span class="c-green">Trum</span>Pick is linked to improving the health and skin condition of users</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h2 class="title">Special for you</h2>
+                                <div class="lottie" id="Personality"></div>
+                                <script>
+                                    animationContainer = document.getElementById('Personality');
+                                    animationData = {
+                                        container: animationContainer,
+                                        renderer: 'svg', 
+                                        loop: true,
+                                        autoplay: true,
+                                        path: 'lottie/Personality.json'
+                                    }
+        
+                                    anim = lottie.loadAnimation(animationData);
+                                </script>
+                                <h3 class="title">Data can help in your situation or in realizing your values</h3>
+                                <p class="text">Specific instructions for various circumstances with a controlled outcome</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h2 class="title">Objective effect</h2>
+                                <div class="lottie" id="Test"></div>
+                                <script>
+                                    animationContainer = document.getElementById('Test');
+                                    animationData = {
+                                        container: animationContainer,
+                                        renderer: 'svg', 
+                                        loop: true,
+                                        autoplay: true,
+                                        path: 'lottie/Test.json'
+                                    }
+        
+                                    anim = lottie.loadAnimation(animationData);
+                                </script>
+                                <h3 class="title">Improvement in test results when combating illness</h3>
+                                <p class="text">More savings, fewer side effects: helps reduce treatment duration and the quantity of medications</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h2 class="title">Subjective effect</h2>
+                                <div class="lottie" id="Effects"></div>
+                                <script>
+                                    animationContainer = document.getElementById('Effects');
+                                    animationData = {
+                                        container: animationContainer,
+                                        renderer: 'svg', 
+                                        loop: true,
+                                        autoplay: true,
+                                        path: 'lottie/Effects.json'
+                                    }
+        
+                                    anim = lottie.loadAnimation(animationData);
+                                </script>
+                                <h3 class="title">Improvement in well-being, skin quality, and a sense of lightness</h3>
+                                <p class="text">Within 20-60 days of following <span class="c-green">Trum</span>Pick tips</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h2 class="title">Much is fixable</h2>
+                                <div class="lottie" id="Chance"></div>
+                                <script>
+                                    animationContainer = document.getElementById('Chance');
+                                    animationData = {
+                                        container: animationContainer,
+                                        renderer: 'svg', 
+                                        loop: true,
+                                        autoplay: true,
+                                        path: 'lottie/Chance.json'
+                                    }
+        
+                                    anim = lottie.loadAnimation(animationData);
+                                </script>
+                                <h3 class="title">Often, it is the lack of dietary adjustments that hinders results</h3>
+                                <p class="text">Modifying the menu will certainly not worsen the situation, but the results can be stunning</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h2 class="title">Assistance for cure</h2>
+                                <div class="lottie" id="Doctor"></div>
+                                <script>
+                                    animationContainer = document.getElementById('Doctor');
+                                    animationData = {
+                                        container: animationContainer,
+                                        renderer: 'svg', 
+                                        loop: true,
+                                        autoplay: true,
+                                        path: 'lottie/Doctor.json'
+                                    }
+        
+                                    anim = lottie.loadAnimation(animationData);
+                                </script>
+                                <h3 class="title">Suitable for any treatment strategy prescribed by a doctor</h3>
+                                <p class="text">Significant contribution to remission and procedural effectiveness</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h2 class="title">Insight the foundation</h2>
+                                <div class="lottie" id="Foundation"></div>
+                                <script>
+                                    animationContainer = document.getElementById('Foundation');
+                                    animationData = {
+                                        container: animationContainer,
+                                        renderer: 'svg', 
+                                        loop: true,
+                                        autoplay: true,
+                                        path: 'lottie/Foundation.json'
+                                    }
+        
+                                    anim = lottie.loadAnimation(animationData);
+                                </script>
+                                <h3 class="title">Motivation based on accurate knowledge is hard to break</h3>
+                                <p class="text">At times, complex info about physiology and chemistry in simple terms</p>
                             </div>
                         </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <div class="swiper-pagination"></div>
                     </div>
                 </section>
                 <section class="faq-section">
@@ -352,7 +554,8 @@
                                 </svg>
                             </div>
                             <div class="accordion-dropdown">
-                                <p class="text c-text">The science question always piques my interest, because we spend a lot of time researching and developing the methods we use in TrumPick (and there’s usually a new, interesting discovery to dive into)</p>
+                                <p class="text c-text">TrumPick provides knowledge about the connection between food and health for free.</p>
+                                <p class="text c-text">If you would like to express your gratitude and support the project, you can use the form or go to the application: "Data" - "Settings" (top right corner) - "Reward for the result." All funds received from voluntary support go towards the development of the project.</p>
                             </div>
                         </div>
                         <div class="accordion">
@@ -364,7 +567,8 @@
                                 </svg>
                             </div>
                             <div class="accordion-dropdown">
-                                <p class="text c-text">The science question always piques my interest, because we spend a lot of time researching and developing the methods we use in TrumPick (and there’s usually a new, interesting discovery to dive into)</p>
+                                <p class="text c-text">TrumPick recommendations do not include a set of products that must be chosen mandatory to achieve results. You can independently modify the products containing important compounds for health and youth according to your preferences. These can be various groups of products, even in opposing price and category ranges.</p>
+                                <p class="text c-text">TrumPick analytics for major world regions has shown that adhering to the project's recommendations is comparable to expenses with a standard diet. Typically, in each region of the world, including those in northern latitudes, there is an inexpensive category of products that meet the criteria of balanced nutrition</p>
                             </div>
                         </div>
                         <div class="accordion">
@@ -382,7 +586,7 @@
                         <div class="section-action">
                             <img src="images/qr-code.svg" alt="">
                             <button class="gradient-button">Use TrumPick <span class="c-green">Beta</span></button>
-                            <button class="copy-link">
+                            <button class="copy-link" data-tooltip="The link to <span class='c-green'>Trum</span>Pick website has been copied <i class='close'></i>">
                                 <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M21.2288 1.77814C18.8575 -0.592712 14.9994 -0.592712 12.6293 1.77814L9.71686 4.68913C9.28171 5.12414 9.28171 5.82884 9.71686 6.26385C10.152 6.69887 10.857 6.69887 11.292 6.26385L14.2044 3.35286C17.9171 -0.133719 23.1491 5.09529 19.6537 8.80083L16.2503 12.204C14.5272 13.9738 11.451 13.5897 10.218 11.4529C9.90393 10.9229 9.22006 10.7497 8.69137 11.0629C7.5269 11.7971 8.51892 13.1004 9.22519 13.7787C10.4109 14.9643 11.968 15.5566 13.5249 15.5566C15.0828 15.5566 16.6397 14.9643 17.8255 13.7789L21.2288 10.3762C23.5893 8.11234 23.5903 4.04148 21.2288 1.77814Z" fill="#4F4E4F"/>
                                     <path d="M11.7102 16.7437L8.79774 19.6547C5.11275 23.1519 -0.149851 17.8932 3.34858 14.2067C3.34845 14.2069 6.7519 10.8035 6.7519 10.8035C8.4726 9.03752 11.5438 9.41378 12.7785 11.5481C13.0918 12.0782 13.7763 12.2528 14.3043 11.9382C15.467 11.2084 14.4794 9.90176 13.777 9.22881C11.4056 6.85797 7.54816 6.85928 5.17678 9.22881L1.77333 12.632C-2.05815 16.4092 0.751666 23.0695 6.07329 23.0072C7.63023 23.0073 9.18796 22.4148 10.3729 21.2294L13.2854 18.3184C14.3022 17.2646 12.7635 15.7266 11.7102 16.7437Z" fill="#4F4E4F"/>
@@ -394,9 +598,56 @@
             </main>
             
             <footer class="footer">
-                .
+                    <div class="container">
+                        <div class="footer-inner">
+                            <div class="footer-links">
+                                <div class="footer-column">
+                                    <p class="text"><b>TrumPick</b></p>
+                                    <p class="text">An application that helps you choose products for a balanced diet. Such food will promote robust health and enhance the effectiveness of disease remission. It contributes to prolonged youthfulness and lifespan. It also aids in halting negative environmental trends</p>
+                                </div>
+                                <div class="footer-column center">
+                                    <p class="text"><b>Social media</b></p>
+                                    <a href="#" class="link"><img src="images/instagram.png" alt=""></a>
+                                    <a href="#" class="link"><img src="images/x.png" alt=""></a>
+                                </div>
+                                <div class="footer-column">
+                                    <p class="text"><b>About</b></p>
+                                    <a href="#" class="link">FAQ</a>
+                                    <a href="#" class="link">Terms of use</a>
+                                    <a href="#" class="link">Privacy</a>
+                                    <a href="#" class="link">Health notice & Disclaimer</a>
+                                </div>
+                                <div class="footer-column">
+                                    <p class="text"><b>Assistance</b></p>
+                                    <a href="#" class="link">Donate</a>
+                                    <a href="#" class="link">Feedback</a>
+                                </div>
+                            </div>
+                            <div class="footer-action">
+                                <button class="copy-link" data-tooltip="The link to <span class='c-green'>Trum</span>Pick website has been copied <i class='close'></i>">
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.2288 1.77814C18.8575 -0.592712 14.9994 -0.592712 12.6293 1.77814L9.71686 4.68913C9.28171 5.12414 9.28171 5.82884 9.71686 6.26385C10.152 6.69887 10.857 6.69887 11.292 6.26385L14.2044 3.35286C17.9171 -0.133719 23.1491 5.09529 19.6537 8.80083L16.2503 12.204C14.5272 13.9738 11.451 13.5897 10.218 11.4529C9.90393 10.9229 9.22006 10.7497 8.69137 11.0629C7.5269 11.7971 8.51892 13.1004 9.22519 13.7787C10.4109 14.9643 11.968 15.5566 13.5249 15.5566C15.0828 15.5566 16.6397 14.9643 17.8255 13.7789L21.2288 10.3762C23.5893 8.11234 23.5903 4.04148 21.2288 1.77814Z" fill="#4F4E4F"/>
+                                        <path d="M11.7102 16.7437L8.79774 19.6547C5.11275 23.1519 -0.149851 17.8932 3.34858 14.2067C3.34845 14.2069 6.7519 10.8035 6.7519 10.8035C8.4726 9.03752 11.5438 9.41378 12.7785 11.5481C13.0918 12.0782 13.7763 12.2528 14.3043 11.9382C15.467 11.2084 14.4794 9.90176 13.777 9.22881C11.4056 6.85797 7.54816 6.85928 5.17678 9.22881L1.77333 12.632C-2.05815 16.4092 0.751666 23.0695 6.07329 23.0072C7.63023 23.0073 9.18796 22.4148 10.3729 21.2294L13.2854 18.3184C14.3022 17.2646 12.7635 15.7266 11.7102 16.7437Z" fill="#4F4E4F"/>
+                                    </svg>                                    
+                                </button>
+                                <div class="select-lenguage">
+                                    <div class="current-lenguage">EN</div>
+                                    <div class="select-dropdown">
+                                        <div class="select-dropdown__item">Русский</div>
+                                        <div class="select-dropdown__item">English</div>
+                                    </div>
+                                </div>
+                                <button class="theme-button">
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.9074 0.0517156C12.2234 0.623278 11.4603 0.987512 10.7869 1.45764C10.0291 1.98772 9.4397 2.63767 8.93977 3.34757C8.28737 4.27408 7.99784 5.33435 7.71368 6.37604C7.39801 7.53773 7.23494 8.72693 7.31379 9.92541C7.36649 10.6861 7.42429 11.4651 7.73473 12.175C8.0716 12.9355 8.62932 13.6085 9.13971 14.2954C10.0291 15.4939 11.3236 16.2038 12.7391 16.803C14.0178 17.3469 15.3544 17.7064 16.7383 17.96C18.2748 18.2412 19.8061 18.1904 21.3322 17.9185C21.7216 17.8494 22.1057 17.7664 22.4899 17.688C22.6846 17.6512 22.8635 17.7019 22.9582 17.8539C23.0318 17.9738 23.0109 18.1029 22.874 18.2182C21.8899 19.0663 20.9744 19.9791 19.8641 20.7027C18.0697 21.8782 16.0964 22.6895 13.8389 22.9153C12.455 23.0536 11.0867 23.0213 9.71863 22.8277C9.15031 22.7493 8.65038 22.4682 8.10834 22.2976C6.49296 21.7813 5.18788 20.8687 3.89863 19.9052C2.15692 18.6053 1.09926 16.9505 0.451957 15.0605C0.00995936 13.7699 -0.0321485 12.4423 0.0151893 11.1101C0.099405 8.74538 1.11495 6.6573 2.61997 4.7535C3.87758 3.15858 5.51415 1.8817 7.52433 1.029C8.86615 0.466607 10.2922 0.116241 11.8024 0.0471318C12.155 0.0332629 12.5023 -0.054299 12.9074 0.0517156Z" fill="black"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
             </footer>
         </div>
-    <script src="js/main.js" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/main.js" type="text/javascript"></script>
     </body>
 </html>
