@@ -322,6 +322,10 @@ body.dark-theme .accordion {
     text-decoration: none;
     color: var(--color-text);
 }
+
+body.dark-theme .footer-column a {
+    color: #FFFFFF;
+}
 .footer-column p.text b {
     margin-bottom: 10px;
     display: block;
@@ -378,6 +382,9 @@ body.dark-theme .swiper-slide {
 
 .tooltip i {
     transform: rotate(45deg);
+    font-size: 20px;
+    color: var(--color-text);
+    font-style: normal;
 }
 
 

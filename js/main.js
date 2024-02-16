@@ -48,7 +48,7 @@ document.querySelectorAll('.copy-link').forEach(el=>{
         let left = coords.left + (target.offsetWidth - tooltipElem.offsetWidth) / 2;
         if (left < 0) left = 0;
 
-        let top = coords.top  - 5;
+        let top = coords.top + 40;
         if (top < 0) {
             top = coords.top + target.offsetHeight + 5;
         }
