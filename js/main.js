@@ -65,3 +65,18 @@ function closeTooltip(el) {
     el.parentElement.remove()
 }
 
+
+let currentUrl = window.location.href
+let appUrl = 'https://app.TrumPick.com'
+document.querySelectorAll(".js-page-copy").forEach(el=>{
+    el.addEventListener("click", function() {
+        navigator.clipboard.writeText(currentUrl)
+    })
+})
+
+document.querySelectorAll(".js-app-copy").forEach(el=>{
+    el.addEventListener("click", function() {
+        navigator.clipboard.writeText(appUrl)
+    })
+})
+
