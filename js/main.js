@@ -80,3 +80,17 @@ document.querySelectorAll(".js-app-copy").forEach(el=>{
     })
 })
 
+let lottieArray = ['In_store', 'Planet', 'Animal', 'Diseases', 'Children', 'Marketing', 'Evidence', 'Independant', 'Personality', 'Test', 'Effects', 'Chance', 'Doctor', 'Foundation']
+
+lottieArray.forEach(video=>{
+    let animationContainer = document.getElementById(video);
+    let animationData = {
+        container: animationContainer,
+        renderer: 'svg', 
+        loop: true,
+        autoplay: true,
+        path: `lottie/${video}.json`
+    }
+    lottie.loadAnimation(animationData);
+})
+

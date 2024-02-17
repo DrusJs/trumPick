@@ -18,14 +18,14 @@
     <body>
         <script>
             const pageTheme = localStorage.getItem("isDarkTheme")
-            console.log(pageTheme)
+
             if (pageTheme) {
                 document.body.classList.add('dark-theme')
             } else {    
                 document.body.classList.remove('dark-theme')
             }
         </script>
-        <script src="js/lottie.js" type="text/javascript"></script>
+
         <div class="wrapper">
             <header class="header">
                 <div class="container">
@@ -98,18 +98,7 @@
             <main class="main">
                 <section class="main-section">
                     <div class="container">
-                        <div class="lottie" id="lottie-container"></div>
-                        <script>
-                            var animationContainer = document.getElementById('lottie-container');
-                            var animationData = {
-                                container: animationContainer,
-                                renderer: 'svg', 
-                                loop: true,
-                                autoplay: true,
-                                path: 'lottie/In_store.json'
-                            }
-                            var anim = lottie.loadAnimation(animationData);
-                        </script>
+                        <div class="lottie" id="In_store"></div>
                         <h1 class="title">Improving Healthspan, Youthspan, Environment through nutrition</h1>
                         <h3 class="title"><span class="c-green">Trum</span>Pick <span class="c-text">helps you create the perfect menu and deciphers composition of any products</span></h3>
                         <p class="text c-text">Based on independent analysis of data available to humanity by artificial intelligence (AI)</p>
@@ -131,8 +120,8 @@
                         <h2 class="title">What you will learn from <span class="c-green">Trum</span>Pick</h2>
                         <div class="grid-container">
                             <div class="inner">
-                                <img class="theme" src="images/age-progress.svg" alt="How your menu impact the aging of your body and the onset age of chronic diseases">
-                                <img class="theme dark" src="images/age-progressDark.svg" alt="How your menu impact the aging of your body and the onset age of chronic diseases">
+                                <img loading="lazy" class="theme" src="images/age-progress.svg" alt="How your menu impact the aging of your body and the onset age of chronic diseases">
+                                <img loading="lazy" class="theme dark" src="images/age-progressDark.svg" alt="How your menu impact the aging of your body and the onset age of chronic diseases">
                             </div>
                             <div class="inner">
                                 <h3 class="title">How your menu impact the aging of your body and the onset age of chronic diseases</h3>
@@ -151,8 +140,8 @@
                         </div>
                         <div class="grid-container">
                             <div class="inner">
-                                <img class="theme" src="images/pie-graph.svg" alt="What food choices to make to halt Global warming without compromising quality of life">
-                                <img class="theme dark" src="images/pie-graphDark.svg" alt="What food choices to make to halt Global warming without compromising quality of life"> 
+                                <img loading="lazy" class="theme" src="images/pie-graph.svg" alt="What food choices to make to halt Global warming without compromising quality of life">
+                                <img loading="lazy" class="theme dark" src="images/pie-graphDark.svg" alt="What food choices to make to halt Global warming without compromising quality of life"> 
                             </div>
                             <div class="inner">
                                 <h3 class="title">What food choices to make to halt Global warming without compromising quality of life</h3>
@@ -171,8 +160,8 @@
                         </div>                        
                         <div class="grid-container">
                             <div class="inner">
-                                <img class="theme" src="images/line-graph.svg" alt="Connection between foods, diseases, aging and climate">
-                                <img class="theme dark" src="images/line-graphDark.svg" alt="Connection between foods, diseases, aging and climate">
+                                <img loading="lazy" class="theme" src="images/line-graph.svg" alt="Connection between foods, diseases, aging and climate">
+                                <img loading="lazy" class="theme dark" src="images/line-graphDark.svg" alt="Connection between foods, diseases, aging and climate">
                             </div>
                             <div class="inner">
                                 <h3 class="title">Connection between foods, diseases, aging and climate</h3>
@@ -193,8 +182,8 @@
                         </div>                         
                         <div class="grid-container">
                             <div class="inner">
-                                <img class="theme" src="images/hungry.svg" alt="Link between cell’s hunger and unhealthy weight">
-                                <img class="theme dark" src="images/hungryDark.svg" alt="Link between cell’s hunger and unhealthy weight">
+                                <img loading="lazy" class="theme" src="images/hungry.svg" alt="Link between cell’s hunger and unhealthy weight">
+                                <img loading="lazy" class="theme dark" src="images/hungryDark.svg" alt="Link between cell’s hunger and unhealthy weight">
                             </div>
                             <div class="inner">
                                 <h3 class="title">Link between cell’s hunger and unhealthy weight</h3>
@@ -220,12 +209,12 @@
                         <div class="flex-container flex-space">
                             <div class="inner column">
                                 <h3 class="title c-text">Tips</h3>
-                                <img src="images/Tips-phone.png" alt="Tips">
+                                <img loading="lazy" src="images/Tips-phone.png" alt="Tips">
                                 <p class="text c-text">What to eat every day to maintain Healthspan, Youthspan, Environment</p>
                             </div>
                             <div class="inner column">
                                 <h3 class="title c-text">Scan</h3>
-                                <img src="images/Scan-phone.png" alt="Scan">
+                                <img loading="lazy" src="images/Scan-phone.png" alt="Scan">
                                 <p class="text c-text">Write down the product name or take a photo of ingredients on the label</p>
                             </div>
                         </div>
@@ -257,19 +246,7 @@
                         <h2 class="title"><span class="c-green">Trum</span>Pick is particularly important</h2>
                         <h3 class="title">Who love the Earth</h3> 
                         <div class="grid-container">
-                            <div class="lottie" id="planet"></div>
-                            <script>
-                                animationContainer = document.getElementById('planet');
-                                animationData = {
-                                    container: animationContainer,
-                                    renderer: 'svg', 
-                                    loop: true,
-                                    autoplay: true,
-                                    path: 'lottie/Planet.json'
-                                }
-    
-                                anim = lottie.loadAnimation(animationData);
-                            </script>
+                            <div class="lottie" id="Planet"></div>
                             <div class="inner">
                                 <h3 class="title c-text">18% of Global warming is responsible for product groups harmful to Healthspan & Youthspan</h3>
                                 <p class="text c-text">Equivalent to stopping all cars, trains, ships and planes combined</p>
@@ -277,19 +254,7 @@
                         </div>
                         <h3 class="title">Who love the animals</h3> 
                         <div class="grid-container">
-                            <div class="lottie" id="animal"></div>
-                            <script>
-                                animationContainer = document.getElementById('animal');
-                                animationData = {
-                                    container: animationContainer,
-                                    renderer: 'svg', 
-                                    loop: true,
-                                    autoplay: true,
-                                    path: 'lottie/Animal.json'
-                                }
-    
-                                anim = lottie.loadAnimation(animationData);
-                            </script>
+                            <div class="lottie" id="Animal"></div>
                             <div class="inner">
                                 <h3 class="title c-text">For strict vegans. For vegans.<br>
                                     For lacto-ovo-vegeterians.<br>
@@ -300,19 +265,7 @@
                         </div>
                         <h3 class="title">Who has health trouble or allergy</h3> 
                         <div class="grid-container">
-                            <div class="lottie" id="diseases"></div>
-                            <script>
-                                animationContainer = document.getElementById('diseases');
-                                animationData = {
-                                    container: animationContainer,
-                                    renderer: 'svg', 
-                                    loop: true,
-                                    autoplay: true,
-                                    path: 'lottie/Diseases_EN.json'
-                                }
-    
-                                anim = lottie.loadAnimation(animationData);
-                            </script>
+                            <div class="lottie" id="Diseases"></div>
                             <div class="inner">
                                 <h3 class="title c-text">Nutrition to accelerate disease remission, improve test results, and subjective well-being</h3>
                                 <p class="text c-text">And also about the connection of products with skin condition, allergies, sensitivity, histamine, etc.</p>
@@ -320,19 +273,7 @@
                         </div>
                         <h3 class="title">For pregnant or weaning</h3> 
                         <div class="grid-container">
-                            <div class="lottie" id="children"></div>
-                            <script>
-                                animationContainer = document.getElementById('children');
-                                animationData = {
-                                    container: animationContainer,
-                                    renderer: 'svg', 
-                                    loop: true,
-                                    autoplay: true,
-                                    path: 'lottie/Children.json'
-                                }
-    
-                                anim = lottie.loadAnimation(animationData);
-                            </script>
+                            <div class="lottie" id="Children"></div>
                             <div class="inner">
                                 <h3 class="title c-text">Conceiving a healthy offspring.<br> 
                                     Overcoming difficult pregnancies.<br>
@@ -343,19 +284,7 @@
                         </div>
                         <h3 class="title">Who cares about unfair marketing</h3> 
                         <div class="grid-container">
-                            <div class="lottie" id="marketing"></div>
-                            <script>
-                                animationContainer = document.getElementById('marketing');
-                                animationData = {
-                                    container: animationContainer,
-                                    renderer: 'svg', 
-                                    loop: true,
-                                    autoplay: true,
-                                    path: 'lottie/Marketing.json'
-                                }
-    
-                                anim = lottie.loadAnimation(animationData);
-                            </script>
+                            <div class="lottie" id="Marketing"></div>
                             <div class="inner">
                                 <h3 class="title c-text">Claimed health benefits of foods or advertised dietary systems genuinely beneficial?</h3>
                                 <p class="text c-text">If you want to truly understand the truth about nutrition and are interested in tangible results</p>
@@ -367,21 +296,21 @@
                 <section class="crossplatforms-section">
                     <div class="container">
                         <h2 class="title flex"> 
-                            <img src="images/logo-round.svg" alt="">
+                            <img loading="lazy" src="images/logo-round.svg" alt="">
                             Where <span class="c-green">Trum</span>Pick works
                         </h2>
                         <h3 class="title c-text">Web for any devices</h3>
                         <div class="flex-container flex-space">
                             <div class="inner column">
-                                <img src="images/comp.png" alt="">
+                                <img loading="lazy" src="images/comp.png" alt="">
                                 <p class="text">Computer</p>
                             </div>
                             <div class="inner column">
-                                <img src="images/tablet.png" alt="">
+                                <img loading="lazy" src="images/tablet.png" alt="">
                                 <p class="text">Tablet</p>
                             </div>
                             <div class="inner column">
-                                <img src="images/phone.png" alt="">
+                                <img loading="lazy" src="images/phone.png" alt="">
                                 <p class="text">Smartphone</p>
                             </div>
                         </div>
@@ -404,19 +333,7 @@
                 </section>
                 <section class="data-section">
                     <div class="container">
-                        <div class="lottie" id="evidence"></div>
-                        <script>
-                            animationContainer = document.getElementById('evidence');
-                            animationData = {
-                                container: animationContainer,
-                                renderer: 'svg', 
-                                loop: true,
-                                autoplay: true,
-                                path: 'lottie/Evidence_EN.json'
-                            }
-
-                            anim = lottie.loadAnimation(animationData);
-                        </script>
+                        <div class="lottie" id="Evidence"></div>
                         <h2 class="title center"><span class="c-green">Trum</span>Pick data: the most reliable of available</h2>
                         <h3 class="title">Nutrition of <b>long-livers. Scientific</b> papers.
                             Info from <b>doctors.</b> Examination of <b>statistics.</b>
@@ -433,126 +350,42 @@
                             <div class="swiper-slide">
                                 <h2 class="title">100% independence</h2>
                                 <div class="lottie" id="Independant"></div>
-                                <script>
-                                    animationContainer = document.getElementById('Independant');
-                                    animationData = {
-                                        container: animationContainer,
-                                        renderer: 'svg', 
-                                        loop: true,
-                                        autoplay: true,
-                                        path: 'lottie/Independant.json'
-                                    }
-        
-                                    anim = lottie.loadAnimation(animationData);
-                                </script>
                                 <h3 class="title">No ads. Not affiliated with food brands or government agencies</h3>
                                 <p class="text">Development of <span class="c-green">Trum</span>Pick is linked to improving the health and skin condition of users</p>
                             </div>
                             <div class="swiper-slide">
                                 <h2 class="title">Special for you</h2>
                                 <div class="lottie" id="Personality"></div>
-                                <script>
-                                    animationContainer = document.getElementById('Personality');
-                                    animationData = {
-                                        container: animationContainer,
-                                        renderer: 'svg', 
-                                        loop: true,
-                                        autoplay: true,
-                                        path: 'lottie/Personality.json'
-                                    }
-        
-                                    anim = lottie.loadAnimation(animationData);
-                                </script>
                                 <h3 class="title">Data can help in your situation or in realizing your values</h3>
                                 <p class="text">Specific instructions for various circumstances with a controlled outcome</p>
                             </div>
                             <div class="swiper-slide">
                                 <h2 class="title">Objective effect</h2>
                                 <div class="lottie" id="Test"></div>
-                                <script>
-                                    animationContainer = document.getElementById('Test');
-                                    animationData = {
-                                        container: animationContainer,
-                                        renderer: 'svg', 
-                                        loop: true,
-                                        autoplay: true,
-                                        path: 'lottie/Test.json'
-                                    }
-        
-                                    anim = lottie.loadAnimation(animationData);
-                                </script>
                                 <h3 class="title">Improvement in test results when combating illness</h3>
                                 <p class="text">More savings, fewer side effects: helps reduce treatment duration and the quantity of medications</p>
                             </div>
                             <div class="swiper-slide">
                                 <h2 class="title">Subjective effect</h2>
                                 <div class="lottie" id="Effects"></div>
-                                <script>
-                                    animationContainer = document.getElementById('Effects');
-                                    animationData = {
-                                        container: animationContainer,
-                                        renderer: 'svg', 
-                                        loop: true,
-                                        autoplay: true,
-                                        path: 'lottie/Effects.json'
-                                    }
-        
-                                    anim = lottie.loadAnimation(animationData);
-                                </script>
                                 <h3 class="title">Improvement in well-being, skin quality, and a sense of lightness</h3>
                                 <p class="text">Within 20-60 days of following <span class="c-green">Trum</span>Pick tips</p>
                             </div>
                             <div class="swiper-slide">
                                 <h2 class="title">Much is fixable</h2>
                                 <div class="lottie" id="Chance"></div>
-                                <script>
-                                    animationContainer = document.getElementById('Chance');
-                                    animationData = {
-                                        container: animationContainer,
-                                        renderer: 'svg', 
-                                        loop: true,
-                                        autoplay: true,
-                                        path: 'lottie/Chance.json'
-                                    }
-        
-                                    anim = lottie.loadAnimation(animationData);
-                                </script>
                                 <h3 class="title">Often, it is the lack of dietary adjustments that hinders results</h3>
                                 <p class="text">Modifying the menu will certainly not worsen the situation, but the results can be stunning</p>
                             </div>
                             <div class="swiper-slide">
                                 <h2 class="title">Assistance for cure</h2>
                                 <div class="lottie" id="Doctor"></div>
-                                <script>
-                                    animationContainer = document.getElementById('Doctor');
-                                    animationData = {
-                                        container: animationContainer,
-                                        renderer: 'svg', 
-                                        loop: true,
-                                        autoplay: true,
-                                        path: 'lottie/Doctor.json'
-                                    }
-        
-                                    anim = lottie.loadAnimation(animationData);
-                                </script>
                                 <h3 class="title">Suitable for any treatment strategy prescribed by a doctor</h3>
                                 <p class="text">Significant contribution to remission and procedural effectiveness</p>
                             </div>
                             <div class="swiper-slide">
                                 <h2 class="title">Insight the foundation</h2>
                                 <div class="lottie" id="Foundation"></div>
-                                <script>
-                                    animationContainer = document.getElementById('Foundation');
-                                    animationData = {
-                                        container: animationContainer,
-                                        renderer: 'svg', 
-                                        loop: true,
-                                        autoplay: true,
-                                        path: 'lottie/Foundation.json'
-                                    }
-        
-                                    anim = lottie.loadAnimation(animationData);
-                                </script>
                                 <h3 class="title">Motivation based on accurate knowledge is hard to break</h3>
                                 <p class="text">At times, complex info about physiology and chemistry in simple terms</p>
                             </div>
@@ -670,6 +503,7 @@
             </footer>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/lottie.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
     </body>
 </html>

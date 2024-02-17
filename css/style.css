@@ -419,7 +419,7 @@ body.dark-theme .footer-column a {
     background-color: var(--color-green);
 }
 
-body.dark-theme .swiper-button-next, .swiper-button-prev {
+body.dark-theme .swiper-button-next, body.dark-theme .swiper-button-prev {
     background-color: #49454F;
     color: #000000;
 }
