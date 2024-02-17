@@ -64,12 +64,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             tooltipElem.style.top = top + 'px';
     
         })
-    })
-    
-    function closeTooltip(el) {
-        el.parentElement.remove()
-    }
-    
+    })    
     
     let currentUrl = window.location.href
     let appUrl = 'https://app.TrumPick.com'
@@ -101,3 +96,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     
     
 });
+
+function closeTooltip(el) {
+    el.parentElement.remove()
+}
