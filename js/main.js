@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         })
     })
     
-    var swiper = new Swiper("#swiper", {
+    let swiper = new Swiper("#swiper", {
         slidesPerView: "auto",
         spaceBetween: 70,
         centeredSlides: true,
@@ -61,7 +61,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
             }
     
             tooltipElem.style.left = left + 'px';
-            tooltipElem.style.top = top + 'px';
+            tooltipElem.style.top = top + document.documentElement.scrollTop + 'px';
+
+            setTimeout(()=>{
+                tooltipElem.remove()
+            }, 5000)
     
         })
     })    

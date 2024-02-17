@@ -175,7 +175,8 @@ body.dark-theme .logo path.theme {
 body.dark-theme .header-action .copy-link path, body.dark-theme .copy-link path {
     fill: #F6FCFF;
 } 
-body.dark-theme .header-action .theme-button path {
+body.dark-theme .header-action .theme-button path,
+body.dark-theme .footer-action .theme-button path {
     fill: #FFFFFF;
 }
 body.dark-theme .rounded-item {
@@ -522,7 +523,8 @@ body.dark-theme .tooltip {
         font-size: 16px;
         padding: 14px 20px;
     }
-    .header-action {
+    .header-action,
+    .footer-action {
         gap: 20px;
     }
     .header-inner {
@@ -531,6 +533,9 @@ body.dark-theme .tooltip {
     .accordion-head svg {
         width: 20px;
         min-width: 20px;
+    }
+    .select-lenguage .current-lenguage {
+        font-size: 20px;
     }
 }
 
