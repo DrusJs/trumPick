@@ -20,6 +20,10 @@ var swiper = new Swiper("#swiper", {
     slidesPerView: "auto",
     spaceBetween: 70,
     centeredSlides: true,
+    speed: 5000,
+    autoplay: {
+        delay: 2000,
+      },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
