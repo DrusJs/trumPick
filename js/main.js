@@ -34,6 +34,8 @@ let tooltipElem;
 
 document.querySelectorAll('.copy-link').forEach(el=>{
     el.addEventListener('click', (event)=>{
+        let activeTool = document.querySelector('.tooltip')
+        if (activeTool) { activeTool.remove() }
         let target = event.currentTarget;
 
         let tooltipHtml = target.dataset.tooltip;
@@ -56,9 +58,10 @@ document.querySelectorAll('.copy-link').forEach(el=>{
         tooltipElem.style.left = left + 'px';
         tooltipElem.style.top = top + 'px';
 
-        document.querySelector('.tooltip .close').addEventListener('click', ()=>{
-            document.querySelector('.tooltop').remove()
-        })
     })
 })
+
+function closeTooltip(el) {
+    el.parentElement.remove()
+}
 
