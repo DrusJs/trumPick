@@ -199,6 +199,36 @@ body.dark-theme .gradient-button span {
     color: #FFFFFF;
 }
 
+.graph-legend {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.graph-legend::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+}
+
+.graph-legend.good::before{
+    background-color: #83ED83;
+}
+.graph-legend.bad::before{
+    background-color: #F88181;
+}
+
+body.dark-theme .graph-legend.good::before{
+    background-color: transparent;
+    background-image: linear-gradient(180deg, rgba(0, 201, 90, .5), rgba(0, 201, 90, 0));
+}
+body.dark-theme .graph-legend.bad::before{
+    background-color: transparent;
+    background-image: linear-gradient(180deg, rgba(255, 0, 0, .5), rgba(255, 0, 0, 0));
+}
+
 .main {
     flex: 1 0 auto;
 }

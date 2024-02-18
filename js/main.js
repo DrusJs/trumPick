@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         speed: 5000,
         autoplay: {
             delay: 2000,
+            pauseOnMouseEnter: true,
           },
         navigation: {
             nextEl: ".swiper-button-next",
@@ -33,10 +34,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
             el: ".swiper-pagination",
             clickable: true,
         },
-    });
+    })
+
+
     
-    let tooltipElem;
-    
+    let tooltipElem    
     document.querySelectorAll('.copy-link').forEach(el=>{
         el.addEventListener('click', (event)=>{
             let activeTool = document.querySelector('.tooltip')
@@ -87,7 +89,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     let lottieArray = ['In_store', 'Planet', 'Animal', 'Diseases', 'Children', 'Marketing', 'Evidence', 'Independant', 'Personality', 'Test', 'Effects', 'Chance', 'Doctor', 'Foundation']
     
     lottieArray.forEach(video=>{
-        let animationContainer = document.getElementById(video);
+        let animationContainer = document.getElementById(video)
         let animationData = {
             container: animationContainer,
             renderer: 'svg', 
@@ -95,9 +97,34 @@ document.addEventListener("DOMContentLoaded", (event) => {
             autoplay: true,
             path: `lottie/${video}.json`
         }
-        lottie.loadAnimation(animationData);
+        lottie.loadAnimation(animationData)
     })
-    
+
+    let Visible = function (target) {
+
+        let targetPosition = {
+            top: window.scrollY + target.getBoundingClientRect().top,
+            bottom: window.scrollY + target.getBoundingClientRect().bottom
+        }
+        let windowPosition = {
+            top: window.scrollY,
+            bottom: window.scrollY + document.documentElement.clientHeight
+        }
+
+        if (targetPosition.bottom > windowPosition.top && 
+            targetPosition.top < windowPosition.bottom) { 
+            swiper.autoplay.start()
+        } else {
+            swiper.autoplay.stop()
+        }
+
+    }
+
+    let swiperElement = document.querySelector('#swiper')
+    window.addEventListener('scroll', function() {
+        Visible(swiperElement)
+    })
+    Visible(swiperElement) 
     
 });
 
