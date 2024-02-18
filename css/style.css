@@ -212,6 +212,12 @@ body.dark-theme .gradient-button span {
     height: 20px;
     border-radius: 2px;
 }
+.importants-section .lottie {
+    max-height: 350px;
+}
+.data-section .lottie {
+    max-height: 330px;
+}
 
 .graph-legend.good::before{
     background-color: #83ED83;
