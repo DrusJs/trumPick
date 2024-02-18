@@ -150,6 +150,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
     
 });
 
+document.querySelectorAll('.current-lenguage').forEach(el=>{
+    el.addEventListener('click', (event)=>{
+        event.currentTarget.parentElement.classList.add('active')
+    })
+})
+
 function closeTooltip(el) {
     el.parentElement.remove()
 }
