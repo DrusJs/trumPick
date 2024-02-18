@@ -39,6 +39,25 @@ body.dark-theme {
     color: #FFFFFF;
 }
 
+.gradient-section {
+    background-image: linear-gradient(
+        180deg,
+        rgba(232, 232, 232, 0.04) 0%,
+        rgba(232, 232, 232, 0) 0.01%,
+        rgba(232, 232, 232, 0.23) 48.32%,
+        rgba(232, 232, 232, 0.35) 100%
+      );
+}
+body.dark-theme .gradient-section {
+    background-image: linear-gradient(
+        180deg,
+        rgba(232, 232, 232, 0.01) 0%,
+        rgba(232, 232, 232, 0) 0.01%,
+        rgba(232, 232, 232, 0.03) 48.32%,
+        rgba(232, 232, 232, 0.05) 100%
+      );
+}
+
 .c-text {
     color: var(--color-text);
 }
@@ -84,7 +103,7 @@ body.dark-theme .c-text {
 .container {
     width: 100%;
     max-width: 1330px;
-    padding: 0 50px 100px;
+    padding: 50px 50px 50px;
     margin: 0 auto;
 }
 .header .container {
