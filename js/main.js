@@ -149,6 +149,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     Visible(swiperElement) 
     
 });
+//lang document.documentElement.getAttribute('lang').split('-')[0].toUpperCase()
 
 document.querySelectorAll('.current-lenguage').forEach(el=>{
     el.addEventListener('click', (event)=>{
