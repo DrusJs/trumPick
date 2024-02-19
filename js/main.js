@@ -23,7 +23,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     })
 
     let VisibleLottie = function (target) {
-
+        if (!target) {
+            return
+        }
         let targetPosition = {
             top: window.scrollY + target.getBoundingClientRect().top,
             bottom: window.scrollY + target.getBoundingClientRect().bottom
