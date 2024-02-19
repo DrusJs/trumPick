@@ -111,6 +111,8 @@ body.dark-theme .c-text {
 }
 .main-section .container {
     max-width: 900px;
+    display: flex;
+    flex-direction: column;
 }
 .data-section .container {
     max-width: 1050px;
@@ -270,7 +272,9 @@ body.dark-theme .graph-legend.bad::before{
 .main {
     flex: 1 0 auto;
 }
-
+img.wd {
+    max-height: 344px;
+}
 .footer {
     flex-shrink: 0;
 }
@@ -406,16 +410,15 @@ body.dark-theme .app-link {
 .accordion-head svg {
     min-width: 40px;
     transition: 200ms ease-out;
+    margin-left: 20px;
 }
 .accordion-dropdown {
-    max-height: 0;
     transition: 260ms ease-out;
     opacity: 0;
     visibility: hidden;
     overflow: hidden;
 }
 .active .accordion-dropdown {
-    max-height: 400px;
     opacity: 1;
     visibility: visible;
     padding: 24px 0 0;
@@ -478,6 +481,7 @@ body.dark-theme .app-link {
     border-top: 1px solid #E4E4E7;
     padding: 20px 0 30px;
     font-size: 16px;
+    margin-top: 16px;
 }
 
 .footer-links {
@@ -655,6 +659,20 @@ body.dark-theme .tooltip {
         padding: 10px 12px;
         font-size: 16px;
     }
+    .main-section .container .text {
+        order: 1;
+        margin-top: 30px;
+    }
+    .header-action button svg, .footer-action button svg {
+        width: 16px;
+        height: 23px;
+    }
+    .swiper {
+        padding: 50px 30px;
+    }
+    .swiper-slide {
+        height: auto;
+    }
 }
 
 @media (max-width: 550px) {
@@ -692,6 +710,9 @@ body.dark-theme .tooltip {
         gap: 10px;
     }
     .footer-column.center .text {
+        width: 100%;
+    }
+    img.wd {
         width: 100%;
     }
 }

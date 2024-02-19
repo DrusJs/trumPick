@@ -14,6 +14,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     document.querySelectorAll('.accordion-head').forEach(el=>{
         el.addEventListener('click', ()=>{
             el.parentElement.classList.toggle('active')
+            if (el.parentElement.classList.contains('active')) {
+                el.nextElementSibling.style.maxHeight = el.nextElementSibling.scrollHeight+ 100 + 'px'
+            } else {
+                el.nextElementSibling.style.maxHeight = '0px'
+            }
         })
     })
 
