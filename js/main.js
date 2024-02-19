@@ -17,26 +17,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         })
     })
 
-    let Visible = function (target) {
-
-        let targetPosition = {
-            top: window.scrollY + target.getBoundingClientRect().top,
-            bottom: window.scrollY + target.getBoundingClientRect().bottom
-        }
-        let windowPosition = {
-            top: window.scrollY,
-            bottom: window.scrollY + document.documentElement.clientHeight
-        }
-
-        if (targetPosition.bottom > windowPosition.top && 
-            targetPosition.top < windowPosition.bottom) { 
-            swiper.autoplay.start()
-        } else {
-            swiper.autoplay.stop()
-        }
-
-    }
-
     let VisibleLottie = function (target) {
 
         let targetPosition = {
@@ -68,11 +48,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         slidesPerView: "auto",
         spaceBetween: 70,
         centeredSlides: true,
-        speed: 2000,
-        autoplay: {
-            delay: 2000,
-            pauseOnMouseEnter: true,
-          },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -139,14 +114,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     })
     
 
-    let swiperElement = document.querySelector('#swiper')
     window.addEventListener('scroll', function() {
-        Visible(swiperElement)
         lottieArray.forEach(video=>{
             VisibleLottie(document.getElementById(video))
         })
     })
-    Visible(swiperElement) 
     
 });
 //lang document.documentElement.getAttribute('lang').split('-')[0].toUpperCase()

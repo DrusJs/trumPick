@@ -604,7 +604,7 @@ body.dark-theme .tooltip {
         margin-bottom: 20px;
     }
     p.text {
-        font-size: 12px;
+        font-size: 16px;
     }
     .grid-container {
         grid-template-columns: 1fr;
@@ -653,7 +653,7 @@ body.dark-theme .tooltip {
     }
     .select-lenguage .select-dropdown .select-dropdown__item {
         padding: 10px 12px;
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -665,21 +665,33 @@ body.dark-theme .tooltip {
         font-size: 22px;
     }
     h3.title {
-        font-size: 15px;
+        font-size: 18px;
     }
     p.text {
-        font-size: 12px;
+        font-size: 16px;
     }
     .qr {
         width: 60px;
     }
     .tooltip {
-        font-size: 14px;
+        font-size: 16px;
     }
     .container {
         padding: 0 30px 40px;
     }
     .active .accordion-dropdown .text {
         width: 90%;
+    }
+    .footer-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-column.center {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .footer-column.center .text {
+        width: 100%;
     }
 }
