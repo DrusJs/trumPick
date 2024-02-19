@@ -593,7 +593,7 @@ body.dark-theme .tooltip {
 
 @media (max-width: 750px) {
     h1.title {
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 20px;
     }
     .container {
@@ -604,7 +604,7 @@ body.dark-theme .tooltip {
         margin-bottom: 20px;
     }
     h3.title {
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 20px;
     }
     p.text {
@@ -683,13 +683,13 @@ body.dark-theme .tooltip {
 
 @media (max-width: 550px) {
     h1.title {
-        font-size: 18px;
+        font-size: 20px;
     }
     h2.title {
         font-size: 22px;
     }
     h3.title {
-        font-size: 18px;
+        font-size: 20px;
     }
     p.text {
         font-size: 16px;
