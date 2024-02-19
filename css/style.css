@@ -673,9 +673,10 @@ body.dark-theme .tooltip {
     .swiper-slide {
         height: auto;
     }
-    .qr {
+    .qr, body.dark-theme .qr.white {
         display: none;
     }
+
     .gradient-button {
         width: 100%;
     }
@@ -693,9 +694,6 @@ body.dark-theme .tooltip {
     }
     p.text {
         font-size: 16px;
-    }
-    .qr {
-        width: 60px;
     }
     .tooltip {
         font-size: 16px;
