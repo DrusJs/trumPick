@@ -673,6 +673,9 @@ body.dark-theme .tooltip {
     .swiper-slide {
         height: auto;
     }
+    .qr {
+        display: none;
+    }
 }
 
 @media (max-width: 550px) {
